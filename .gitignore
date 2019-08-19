@@ -5,3 +5,9 @@ rock.jpg
 sand.jpg
 tree_obj.png
 water.jpg
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release
+object.qrc
+debug/
