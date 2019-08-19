@@ -5,15 +5,13 @@
 #include <QDebug>
 #include <memory>
 #include "mainpanel.h"
-namespace Ui {
-class MainWindow;
-}
+#include "newmap.h"
+namespace Ui {class MainWindow;}
 class Mainpanel;
 enum class Terrain{
     grass,sand,rock,wather,tree
 };
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow{
     Q_OBJECT
 public:
     explicit MainWindow(QWidget *parent = nullptr);

@@ -27,6 +27,8 @@ void MainWindow::load(){
 }
 void MainWindow::newmap(){
      qDebug()<<"New map";
+     Newmap x1(this);
+     x1.show();
 }
 void MainWindow::backward(){
     qDebug()<<"Backward";

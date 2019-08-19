@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    mainpanel.cpp
+    mainpanel.cpp \
+    newmap.cpp
 
 HEADERS += \
         mainwindow.h \
-    mainpanel.h
+    mainpanel.h \
+    newmap.h
 
 FORMS += \
         mainwindow.ui \
-    mainpanel.ui
+    mainpanel.ui \
+    newmap.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
