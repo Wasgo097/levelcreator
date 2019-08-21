@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->statusBar->hide();
     ui->mainToolBar->hide();
     mainpanel=std::make_unique<Mainpanel>(this);
-    mainpanel->move(733,20);
+    mainpanel->move(733,15);
     connect(ui->menuBar->actions().first()->menu()->actions().first(),SIGNAL(triggered(bool)),this,SLOT(newmap()));
     connect(ui->menuBar->actions().first()->menu()->actions().operator[](1),SIGNAL(triggered(bool)),this,SLOT(save()));
     connect(ui->menuBar->actions().first()->menu()->actions().operator[](2),SIGNAL(triggered(bool)),this,SLOT(load()));
@@ -27,8 +27,10 @@ void MainWindow::load(){
 }
 void MainWindow::newmap(){
      qDebug()<<"New map";
-     Newmap x1(this);
-     x1.show();
+     Map_option opt=New_map::get_map(this);
+     qDebug()<<int(opt.terrain);
+     qDebug()<<int(opt.width);
+     qDebug()<<int(opt.height);
 }
 void MainWindow::backward(){
     qDebug()<<"Backward";

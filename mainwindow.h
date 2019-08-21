@@ -5,12 +5,9 @@
 #include <QDebug>
 #include <memory>
 #include "mainpanel.h"
-#include "newmap.h"
+#include "new_map.h"
+#include "global_class.h"
 namespace Ui {class MainWindow;}
-class Mainpanel;
-enum class Terrain{
-    grass,sand,rock,wather,tree
-};
 class MainWindow : public QMainWindow{
     Q_OBJECT
 public:
@@ -22,6 +19,7 @@ private:
     std::unique_ptr<Mainpanel> mainpanel;
     QVector<QPixmap*> map;
     QVector<QVector<bool>> access_map;
+    size_t actual_index=0;
     Terrain actual_terrain;
 private slots:
     void save();

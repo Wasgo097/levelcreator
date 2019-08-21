@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Newmap</class>
- <widget class="QWidget" name="Newmap">
+ <class>New_map</class>
+ <widget class="QDialog" name="New_map">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>153</width>
-    <height>300</height>
+    <width>154</width>
+    <height>263</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
@@ -43,7 +43,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="heigjt"/>
+       <widget class="QLineEdit" name="height"/>
       </item>
       <item>
        <widget class="QLabel" name="label_3">
@@ -53,27 +53,13 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox">
-        <item>
-         <property name="text">
-          <string>Grass</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Rock</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Sand</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Wather</string>
-         </property>
-        </item>
+       <widget class="QComboBox" name="terrain"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Set">
+        <property name="text">
+         <string>Ok</string>
+        </property>
        </widget>
       </item>
      </layout>
