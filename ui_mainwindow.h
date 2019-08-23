@@ -71,7 +71,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(0, 0, 730, 600));
+        label->setGeometry(QRect(0, 0, 730, 601));
         label->setStyleSheet(QString::fromUtf8("border-style:solid;\n"
 "border-color:black;\n"
 "border-width:2px;"));

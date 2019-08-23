@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/new/prefix1">
+    <qresource prefix="/base">
         <file>grass.jpg</file>
         <file>rock.jpg</file>
         <file>sand.jpg</file>

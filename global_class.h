@@ -7,7 +7,7 @@ struct Map_option{
     int width;
     int height;
     Terrain terrain;
-    Map_option(int w, int h, Terrain t){
+    Map_option(int w=730, int h=600, Terrain t=Terrain::water){
         width=w;
         height=h;
         terrain=t;

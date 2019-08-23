@@ -11,7 +11,7 @@ Map_option New_map::get_map(MainWindow *parent){
     map.ui->terrain->addItem("Sand");
     map.ui->terrain->addItem("Water");
     map.exec();
-    return Map_option(map.ui->width->text().toInt(),map.ui->height->text().toInt(),Terrain(map.ui->terrain->currentIndex()));
+    return Map_option(30*map.ui->width->text().toInt(),30*map.ui->height->text().toInt(),Terrain(map.ui->terrain->currentIndex()));
 }
 New_map::~New_map(){
     delete ui;

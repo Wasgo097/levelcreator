@@ -28,18 +28,21 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     mainpanel.cpp \
-    new_map.cpp
+    new_map.cpp \
+    map_editor.cpp
 
 HEADERS += \
         mainwindow.h \
     mainpanel.h \
     global_class.h \
-    new_map.h
+    new_map.h \
+    map_editor.h
 
 FORMS += \
         mainwindow.ui \
     mainpanel.ui \
-    new_map.ui
+    new_map.ui \
+    map_editor.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

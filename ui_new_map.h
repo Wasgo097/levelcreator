@@ -96,8 +96,8 @@ public:
     void retranslateUi(QDialog *New_map)
     {
         New_map->setWindowTitle(QApplication::translate("New_map", "Dialog", nullptr));
-        label_2->setText(QApplication::translate("New_map", "Width", nullptr));
-        label->setText(QApplication::translate("New_map", "Height", nullptr));
+        label_2->setText(QApplication::translate("New_map", "Width area", nullptr));
+        label->setText(QApplication::translate("New_map", "Height area", nullptr));
         label_3->setText(QApplication::translate("New_map", "Base biom", nullptr));
         Set->setText(QApplication::translate("New_map", "Ok", nullptr));
     } // retranslateUi
