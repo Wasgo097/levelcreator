@@ -14,23 +14,45 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>730</x>
       <y>0</y>
-      <width>730</width>
-      <height>601</height>
+      <width>81</width>
+      <height>191</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">border-style:solid;
-border-color:black;
-border-width:2px;</string>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="grass">
+       <property name="text">
+        <string>Grass</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="rock">
+       <property name="text">
+        <string>Rock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sand">
+       <property name="text">
+        <string>Sand</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="water">
+       <property name="text">
+        <string>Water</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

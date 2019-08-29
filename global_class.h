@@ -4,6 +4,8 @@ enum class Terrain{
     grass=0,rock,sand,water,tree
 };
 struct Map_option{
+    int x=0;
+    int y=0;
     int width;
     int height;
     Terrain terrain;

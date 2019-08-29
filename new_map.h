@@ -10,7 +10,6 @@ public:
     static Map_option get_map(MainWindow * parent);
 private slots:
     void on_Set_clicked();
-
 private:
     explicit New_map(MainWindow *parent = nullptr);
     ~New_map();

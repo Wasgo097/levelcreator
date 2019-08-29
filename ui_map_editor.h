@@ -25,10 +25,14 @@ public:
     {
         if (Map_editor->objectName().isEmpty())
             Map_editor->setObjectName(QString::fromUtf8("Map_editor"));
-        Map_editor->resize(730, 600);
+        Map_editor->resize(720, 600);
+        Map_editor->setStyleSheet(QString::fromUtf8("border-style: solid;\n"
+"    border-width: 2px;\n"
+"    border-color: red;"));
         label = new QLabel(Map_editor);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(0, 0, 730, 600));
+        label->setGeometry(QRect(0, 0, 720, 600));
+        label->setStyleSheet(QString::fromUtf8(""));
 
         retranslateUi(Map_editor);
 
